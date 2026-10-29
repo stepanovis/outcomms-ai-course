@@ -224,3 +224,13 @@
 @media (max-width: 760px) {
   .hs-catalog .hs-catalog-team { grid-template-columns: 1fr; }
 }
+
+/* Program 03: access chain diagrams (agent → MCP → API → index → data, and the file path). */
+.access-stacks { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+.access-stack { border: 2px solid var(--color-black); background: white; padding: 18px; box-shadow: 4px 4px 0 var(--color-black); min-width: 0; }
+.presentation .access-stack h3 { font-size: clamp(17px, 1.45vw, 22px); line-height: 1.2; margin: 0 0 14px; }
+.as-node { border: 2px solid var(--color-black); background: var(--color-light-blue); padding: 12px 14px; font-weight: 600; font-size: clamp(16px, 1.3vw, 19px); }
+.as-node small { display: block; margin-top: 6px; font-size: 14px; font-weight: 400; line-height: 1.35; }
+.as-node--data { background: #eee2ff; }
+.as-arrow { padding: 7px 4px; font-size: 14px; color: #075bbb; font-weight: 600; }
+@media (max-width: 760px) { .access-stacks { grid-template-columns: 1fr; } }
