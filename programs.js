@@ -5,12 +5,12 @@
    html is trusted, locally authored slide markup, never external/user-generated data.
    Add slides: [...] to any program below to replace its two default layout samples.
    Append slide objects to that array; navigation counts them automatically.
-   Program 01 loads authored content from lesson-models.js.
-   Programs 03–07 retain their two layout samples for later lesson authoring. */
+   Programs 01–03 load authored content from lesson-*.js files.
+   Programs 04–07 retain their two layout samples for later lesson authoring. */
 window.OUTCOMMS_PROGRAMS = [
   { id: 'models', title: 'Модели, чаты и агенты', slides: window.OUTCOMMS_MODELS_SLIDES },
   { id: 'harness', title: 'Harness: среда работы агента', slides: window.OUTCOMMS_HARNESS_SLIDES },
-  { id: 'data-access', title: 'Хранение и доступ к данным', topics: ['MCP', 'RAG', 'Файловая база данных'], lead: 'Как агент хранит данные и получает к ним доступ: MCP, RAG и файловая база данных.' },
+  { id: 'data-access', title: 'Хранение и доступ к данным', slides: window.OUTCOMMS_DATA_ACCESS_SLIDES },
   { id: 'skills', title: 'Skills и hooks', topics: ['Skill', 'Hook'], lead: 'Что такое skill и hook.' },
   { id: 'data', title: 'Агент и данные', topics: ['Агент', 'Данные'], lead: 'Как агент может работать с данными.' },
   { id: 'agents', title: 'Агенты работают вместе', topics: ['Агенты', 'Взаимодействие'], lead: 'Как агент может работать с другими агентами.' },
